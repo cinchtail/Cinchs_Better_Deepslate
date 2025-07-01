@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-better-deepslate",
-		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.21.5-1.21.6"
+		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.21.5-1.21.7"
 	},
 	"license": "MIT",
 	"environment": "*",
@@ -20,7 +20,7 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": ["1.21.5","1.21.6"],
+		"minecraft": ["1.21.5","1.21.6","1.21.7"],
 		"java": ">=21",
 		"fabric-api": "*"
 	}
