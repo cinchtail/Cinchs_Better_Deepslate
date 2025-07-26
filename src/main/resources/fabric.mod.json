@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-better-deepslate https://modrinth.com/mod/cinchs-better-deepslate",
-		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.20-1.20.2"
+		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.19-1.19.2"
 	},
 	"license": "MIT",
 	"environment": "*",
