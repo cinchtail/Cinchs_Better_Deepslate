@@ -1,0 +1,89 @@
+package net.cinchtail.cinchsbetterdeepslate.block;
+
+import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
+import net.cinchtail.cinchsbetterdeepslate.item.ModItemGroups;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+public class ModBlocks {
+
+    public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
+            new StairsBlock(ModBlocks.MOSSY_COBBLED_DEEPSLATE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_COBBLED_DEEPSLATE_SLAB = registerBlock("mossy_cobbled_deepslate_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_COBBLED_DEEPSLATE_WALL = registerBlock("mossy_cobbled_deepslate_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
+    public static final Block MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS).strength(3.5f, 6.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs",
+            new StairsBlock(ModBlocks.MOSSY_DEEPSLATE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)
+                            .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
+    public static final Block MOSSY_DEEPSLATE_TILES = registerBlock("mossy_deepslate_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES).strength(3.5f, 6.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE_TILES)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_TILE_STAIRS = registerBlock("mossy_deepslate_tile_stairs",
+            new StairsBlock(ModBlocks.MOSSY_DEEPSLATE_TILES.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)
+                            .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_TILE_SLAB = registerBlock("mossy_deepslate_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
+    public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            new StairsBlock(Blocks.DEEPSLATE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.STONE)
+                            .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
+
+    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, AbstractBlock.Settings.of(Material.STONE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
+                    .requiresTool().noCollision().strength(0.5F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+    public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            new StoneButtonBlock(AbstractBlock.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
+                    .noCollision().strength(0.5F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
+    private static Block registerBlock(String name, Block block, ItemGroup tab) {
+        registerBlockItem(name, block, tab);
+        return Registry.register(Registry.BLOCK, new Identifier(CinchsBetterDeepslate.MOD_ID, name), block);
+    }
+
+    private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
+        return Registry.register(Registry.ITEM, new Identifier(CinchsBetterDeepslate.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings().group(tab)));
+    }
+
+    public static void registerModBlocks() {
+        CinchsBetterDeepslate.LOGGER.debug("Registering ModBlocks for " + CinchsBetterDeepslate.MOD_ID);
+    }
+}
