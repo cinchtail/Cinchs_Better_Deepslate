@@ -12,8 +12,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup CINCHSBETTERDEEPSLATE_TAB = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(CinchsBetterDeepslate.MOD_ID, "betterdeepslate"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betterdeepslate"))
+            Identifier.of(CinchsBetterDeepslate.MOD_ID, "cinchsbetterdeepslate_tab"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsbetterdeepslate"))
                     .icon(() -> new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
