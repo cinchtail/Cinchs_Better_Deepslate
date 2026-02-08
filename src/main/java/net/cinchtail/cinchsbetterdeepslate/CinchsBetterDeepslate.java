@@ -29,13 +29,15 @@ public class CinchsBetterDeepslate {
     public static final CreativeModeTab CINCHSBETTERDEEPSLATE_TAB = new CreativeModeTab("cinchsbetterdeepslate_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get());
+            return new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
         }
 
         @Override
         public void fillItemList(@NotNull NonNullList<ItemStack> items) {
             super.fillItemList(items);
             index = 0;
+            items.set(index, new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()));
+            index++;
             items.set(index, new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()));
             index++;
             items.set(index, new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get()));

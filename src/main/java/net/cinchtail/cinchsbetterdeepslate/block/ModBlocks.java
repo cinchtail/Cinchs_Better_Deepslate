@@ -21,6 +21,11 @@ import static net.minecraft.world.level.block.Blocks.DEEPSLATE;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CinchsBetterDeepslate.MOD_ID);
+
+    public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_TILES).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
+
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).strength(3.5F, 6.0F)
                     .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
