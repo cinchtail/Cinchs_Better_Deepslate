@@ -24,7 +24,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES).strength(2.5F, 3.0F)
-                    .sound(SoundType.DEEPSLATE_TILES).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).strength(3.5F, 6.0F)
