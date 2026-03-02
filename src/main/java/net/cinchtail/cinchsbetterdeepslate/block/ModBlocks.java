@@ -10,12 +10,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
+    public static final Block SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            new SculkInlaidDeepslateBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+
     public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
-            new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE)
+                    .strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);
     public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
             new StairsBlock(ModBlocks.MOSSY_COBBLED_DEEPSLATE.getDefaultState(),FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE)
                     .sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)), ModItemGroups.CINCHSBETTERDEEPSLATE_TAB);

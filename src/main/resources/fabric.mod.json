@@ -3,15 +3,16 @@
 	"id": "cinchsbetterdeepslate",
 	"version": "${version}",
 	"name": "Cinch's Better Deepslate",
-	"description": "A mod that adds new deepslate blocks, re-does deepslate crafting recipes, and adds new deepslate and blackstone tools.",
+	"description": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
 	"authors": [
 		"Cinchtail"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-better-deepslate https://modrinth.com/mod/cinchs-better-deepslate",
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-better-deepslate",
 		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.19-1.19.2"
 	},
-	"license": "MIT",
+	"license": "All Rights Reserved",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -20,7 +21,7 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": ["1.19","1.19.1","1.19.2"],
+		"minecraft": ["1.19","1.19.1","1.19.2","1.19.3","1.19.4"],
 		"java": ">=17"
 	}
 }

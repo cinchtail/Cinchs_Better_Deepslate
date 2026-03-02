@@ -9,5 +9,5 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup CINCHSBETTERDEEPSLATE_TAB = FabricItemGroupBuilder.build(
-            new Identifier(CinchsBetterDeepslate.MOD_ID, "cinchsbetterdeepslate_tab"), () -> new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE));
+            new Identifier(CinchsBetterDeepslate.MOD_ID, "cinchsbetterdeepslate_tab"), () -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE));
 }
