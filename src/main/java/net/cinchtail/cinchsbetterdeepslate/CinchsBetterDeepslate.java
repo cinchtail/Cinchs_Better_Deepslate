@@ -31,7 +31,6 @@ public class CinchsBetterDeepslate {
     }
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
