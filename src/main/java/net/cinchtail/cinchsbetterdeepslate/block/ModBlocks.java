@@ -22,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CinchsBetterDeepslate.MOD_ID);
 
     public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
-            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES).strength(2.5F, 3.0F)
+            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
