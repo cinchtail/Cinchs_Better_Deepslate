@@ -14,6 +14,10 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    public static final Block SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            new SculkInlaidDeepslateBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F)));
+
     public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)));
     public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
@@ -81,9 +85,7 @@ public class ModBlocks {
     public static Block CreatePolishedDeepslateButton() {
         return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY));
     }
-
     public static void registerModBlocks() {
         CinchsBetterDeepslate.LOGGER.info("Registering ModBlocks for " + CinchsBetterDeepslate.MOD_ID);
     }
 }
-

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobbled_deepslate": {
+    "has_sculk": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:cobbled_deepslate"
+            "items": "minecraft:sculk"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsbetterdeepslate:deepslate_sword"
+        "recipe": "cinchsbetterdeepslate:sculk_inlaid_deepslate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cobbled_deepslate"
+      "has_sculk"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsbetterdeepslate:deepslate_sword"
+      "cinchsbetterdeepslate:sculk_inlaid_deepslate"
     ]
   }
 }
