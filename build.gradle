@@ -9,7 +9,7 @@ version = mod_version + "-" + minecraft_version
 group = 'net.cinchtail.cinchsbetterdeepslate'
 
 base {
-    archivesName = 'cinchsbetterdeepslate'
+    archivesName = mod_id + "-[Forge-1.20.6]"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)

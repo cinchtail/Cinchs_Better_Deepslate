@@ -15,9 +15,10 @@ public class ModCreativeModeTabs {
             CinchsBetterDeepslate.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
-                    .title(Component.literal("Cinch's Better Deepslate Tab"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()))
+                    .title(Component.literal("Cinch's Better Deepslate"))
                     .displayItems((displayParameters, output) -> {
+                        output.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB.get());
@@ -35,16 +36,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_WALL.get());
                         output.accept(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.POLISHED_DEEPSLATE_BUTTON.get());
-                        output.accept(ModItems.DEEPSLATE_SWORD.get());
-                        output.accept(ModItems.DEEPSLATE_PICKAXE.get());
-                        output.accept(ModItems.DEEPSLATE_AXE.get());
-                        output.accept(ModItems.DEEPSLATE_SHOVEL.get());
-                        output.accept(ModItems.DEEPSLATE_HOE.get());
-                        output.accept(ModItems.BLACKSTONE_SWORD.get());
-                        output.accept(ModItems.BLACKSTONE_PICKAXE.get());
-                        output.accept(ModItems.BLACKSTONE_AXE.get());
-                        output.accept(ModItems.BLACKSTONE_SHOVEL.get());
-                        output.accept(ModItems.BLACKSTONE_HOE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
