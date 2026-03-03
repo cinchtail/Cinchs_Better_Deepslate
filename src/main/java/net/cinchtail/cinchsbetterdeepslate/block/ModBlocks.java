@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsbetterdeepslate.block;
 
 import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
-import net.cinchtail.cinchsbetterdeepslate.item.ModItems;
 import net.cinchtail.cinchsbetterdeepslate.util.ModBlockSetType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -82,19 +81,21 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
                     BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE), ModBlockSetType.POLISHED_DEEPSLATE));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
+    public static class ModItems {
+        public static final DeferredRegister<Item> ITEMS =
+                DeferredRegister.create(ForgeRegistries.ITEMS, CinchsBetterDeepslate.MOD_ID);
     }
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-    }
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
-    }
+    public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> registeredBlock = BLOCKS.register(name, block);
+        ModItems.ITEMS.register(name, () -> new BlockItem(registeredBlock.get(), new Item.Properties()));
+        return registeredBlock; }
+
     private static ButtonBlock polishedDeepslateButton() {
         return new ButtonBlock(BlockBehaviour.Properties.of().noCollission().strength(0.5F)
                 .pushReaction(PushReaction.DESTROY), ModBlockSetType.POLISHED_DEEPSLATE, 20, false);
+    }
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+        ModItems.ITEMS.register(eventBus);
     }
 }
