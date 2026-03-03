@@ -16,9 +16,10 @@ import java.util.Set;
 public class ModCreativeModeTabs {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CinchsBetterDeepslate.MOD_ID);
 
-    public static String CINCHSBETTERDEEPSLATE_TAB_TITLE = "cinchsbetterdeepslate.tab";
+    public static String CINCHSBETTERDEEPSLATE_TAB_TITLE = "itemgroup.cinchsbetterdeepslate";
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab", () -> {
+    public static final DeferredHolder<CreativeModeTab,
+            CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab", () -> {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();
 
         builder.displayItems((itemDisplay, output) -> {
@@ -29,18 +30,9 @@ public class ModCreativeModeTabs {
                     .map((block) -> block.get().asItem())
                     .filter(addedItems::add)
                     .forEach(output::accept);
-
-            ModItems.ITEMS.getEntries()
-                    .stream()
-                    .map((item) -> item.get().asItem())
-                    .filter(addedItems::add)
-                    .forEach(output::accept);
-
         });
-
-        builder.icon(() -> new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()));
+        builder.icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()));
         builder.title(Component.translatable(CINCHSBETTERDEEPSLATE_TAB_TITLE));
-
         return builder.build();
     });
 }
