@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup CINCHSBETTERDEEPSLATE_TAB = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(CinchsBetterDeepslate.MOD_ID, "betterdeepslate"),
+            new Identifier(CinchsBetterDeepslate.MOD_ID, "cinchsbetterdeepslate_tab"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsbetterdeepslate"))
                     .icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
