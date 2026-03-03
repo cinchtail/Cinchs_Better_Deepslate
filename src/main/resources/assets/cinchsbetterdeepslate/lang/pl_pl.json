@@ -16,5 +16,7 @@
   "block.cinchsbetterdeepslate.deepslate_wall": "Łupkowy murek",
   "block.cinchsbetterdeepslate.deepslate_slab": "Łupkowa płyta",
   "block.cinchsbetterdeepslate.deepslate_stairs": "Łupkowe schody",
-  "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Łupek inkrustowany skalkiem"
+  "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Łupek inkrustowany skalkiem",
+
+  "itemgroup.cinchsbetterdeepslate": "Cinch's Better Deepslate"
 }
