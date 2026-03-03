@@ -14,7 +14,8 @@ public class ModItemGroups {
     public static final ItemGroup CINCHSBETTERDEEPSLATE_TAB = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CinchsBetterDeepslate.MOD_ID, "betterdeepslate"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betterdeepslate"))
-                    .icon(() -> new ItemStack(ModBlocks.MOSSY_DEEPSLATE_BRICKS)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
@@ -32,16 +33,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_WALL);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
-                        entries.add(ModItems.DEEPSLATE_SWORD);
-                        entries.add(ModItems.DEEPSLATE_PICKAXE);
-                        entries.add(ModItems.DEEPSLATE_AXE);
-                        entries.add(ModItems.DEEPSLATE_SHOVEL);
-                        entries.add(ModItems.DEEPSLATE_HOE);
-                        entries.add(ModItems.BLACKSTONE_SWORD);
-                        entries.add(ModItems.BLACKSTONE_PICKAXE);
-                        entries.add(ModItems.BLACKSTONE_AXE);
-                        entries.add(ModItems.BLACKSTONE_SHOVEL);
-                        entries.add(ModItems.BLACKSTONE_HOE);
                     }).build());
 
 
