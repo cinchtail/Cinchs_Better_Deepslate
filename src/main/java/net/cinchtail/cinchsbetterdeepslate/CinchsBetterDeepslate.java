@@ -20,8 +20,8 @@ public class CinchsBetterDeepslate {
     public static final String MOD_ID = "cinchsbetterdeepslate";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public CinchsBetterDeepslate() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public CinchsBetterDeepslate(FMLJavaModLoadingContext context) {
+        IEventBus modEventBus = context.getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
