@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsbetterdeepslate.block;
 
 import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
-import net.cinchtail.cinchsbetterdeepslate.item.ModItems;
 import net.cinchtail.cinchsbetterdeepslate.util.ModBlockSetType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -20,6 +19,11 @@ import static net.minecraft.world.level.block.Blocks.DEEPSLATE;
 
 public class ModBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CinchsBetterDeepslate.MOD_ID);
+
+    public static final DeferredBlock<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()
+                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "sculk_inlaid_deepslate")))));
 
     public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
@@ -96,16 +100,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", ModBlocks::polishedDeepslateButton);
 
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
-        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
+    public static class ModItems {
+        public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(CinchsBetterDeepslate.MOD_ID);
     }
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().useBlockDescriptionPrefix()
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, name)))));
+    public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> blockReg = BLOCKS.register(name, block);
+        ModItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(),
+                new Item.Properties().useBlockDescriptionPrefix().setId(ResourceKey.create(Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, name)))));
+        return blockReg;
     }
-
     private static Block polishedDeepslateButton() {
         return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)
                 .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_button"))));

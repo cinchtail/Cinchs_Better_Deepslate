@@ -24,7 +24,6 @@ public record ModBlockSetType(String name, boolean canOpenByHand, boolean canOpe
         VALUES.add(blockSetType);
         return blockSetType;
     }
-
     public static Stream<BlockSetType> values() {
         return VALUES.stream();
     }

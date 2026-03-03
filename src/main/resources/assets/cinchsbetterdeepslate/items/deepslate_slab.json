@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsbetterdeepslate:item/deepslate_slab"
+    "model": "cinchsbetterdeepslate:block/deepslate_slab"
   }
 }

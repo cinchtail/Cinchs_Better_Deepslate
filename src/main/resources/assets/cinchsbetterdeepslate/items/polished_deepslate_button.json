@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsbetterdeepslate:item/polished_deepslate_button"
+    "model": "cinchsbetterdeepslate:block/polished_deepslate_button_inventory"
   }
 }
