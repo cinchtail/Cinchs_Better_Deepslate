@@ -88,8 +88,8 @@ public class ModBlocks {
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> registeredBlock = BLOCKS.register(name, block);
         ModItems.ITEMS.register(name, () -> new BlockItem(registeredBlock.get(), new Item.Properties()));
-        return registeredBlock; }
-
+        return registeredBlock;
+    }
     private static ButtonBlock polishedDeepslateButton() {
         return new ButtonBlock(BlockBehaviour.Properties.of().noCollission().strength(0.5F)
                 .pushReaction(PushReaction.DESTROY), ModBlockSetType.POLISHED_DEEPSLATE, 20, false);
