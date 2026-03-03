@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blackstone": {
+    "has_sculk": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blackstone"
+            "items": [
+              "minecraft:sculk"
+            ]
           }
         ]
       },
@@ -13,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsbetterdeepslate:blackstone_pickaxe"
+        "recipe": "cinchsbetterdeepslate:sculk_inlaid_deepslate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blackstone"
+      "has_sculk"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsbetterdeepslate:blackstone_pickaxe"
+      "cinchsbetterdeepslate:sculk_inlaid_deepslate"
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blackstone": {
+    "has_mossy_cobbled_deepslate": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blackstone"
+            "items": "cinchsbetterdeepslate:mossy_cobbled_deepslate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsbetterdeepslate:blackstone_shovel"
+        "recipe": "cinchsbetterdeepslate:mossy_cobbled_deepslate_wall_from_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blackstone"
+      "has_mossy_cobbled_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsbetterdeepslate:blackstone_shovel"
+      "cinchsbetterdeepslate:mossy_cobbled_deepslate_wall_from_stonecutting"
     ]
   }
 }
