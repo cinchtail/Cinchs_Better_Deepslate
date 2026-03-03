@@ -11,7 +11,7 @@
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-better-deepslate",
 		"sources": "https://github.com/cinchtail/Cinchs_Better_Deepslate/tree/Fabric-1.21.1"
 	},
-	"license": "MIT",
+	"license": "All Rights Reserved",
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
