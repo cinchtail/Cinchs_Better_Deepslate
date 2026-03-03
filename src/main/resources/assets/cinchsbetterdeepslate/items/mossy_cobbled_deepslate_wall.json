@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsbetterdeepslate:item/mossy_cobbled_deepslate_wall"
+    "model": "cinchsbetterdeepslate:block/mossy_cobbled_deepslate_wall_inventory"
   }
 }

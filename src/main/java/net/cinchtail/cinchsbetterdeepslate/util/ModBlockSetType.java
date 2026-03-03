@@ -20,7 +20,6 @@ public class ModBlockSetType {
         VALUES.add(blockSetType);
         return blockSetType;
     }
-
     public static Stream<BlockSetType> values() {
         return VALUES.stream();
     }

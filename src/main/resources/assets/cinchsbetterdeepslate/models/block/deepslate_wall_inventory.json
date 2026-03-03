@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/wall_inventory",
+  "parent": "cinchsbetterdeepslate:block/two_texture_wall_inventory",
   "textures": {
-    "wall": "minecraft:block/deepslate"
+    "top": "minecraft:block/deepslate_top",
+    "side": "minecraft:block/deepslate"
   }
 }

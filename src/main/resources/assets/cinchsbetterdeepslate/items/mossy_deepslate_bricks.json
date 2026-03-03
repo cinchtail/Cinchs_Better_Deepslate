@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsbetterdeepslate:item/mossy_deepslate_bricks"
+    "model": "cinchsbetterdeepslate:block/mossy_deepslate_bricks"
   }
 }
