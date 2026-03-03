@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup CINCHSBETTERDEEPSLATE_TAB = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CinchsBetterDeepslate.MOD_ID, "betterdeepslate"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betterdeepslate"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsbetterdeepslate"))
                     .icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
@@ -34,7 +34,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
                     }).build());
-
 
     public static void registerItemGroups() {
         CinchsBetterDeepslate.LOGGER.info("Registering Item Groups for " + CinchsBetterDeepslate.MOD_ID);
