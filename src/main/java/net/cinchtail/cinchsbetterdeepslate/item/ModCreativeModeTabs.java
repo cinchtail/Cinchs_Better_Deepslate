@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()))
-                    .title(Component.literal("Cinch's Better Deepslate"))
+                    .title(Component.translatable("itemgroup.cinchsbetterdeepslate"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get());
