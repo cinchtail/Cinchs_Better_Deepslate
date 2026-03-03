@@ -13,6 +13,10 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    public static final Block SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            new SculkInlaidDeepslateBlock(Block.Settings.copy(Blocks.CHISELED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F)));
+
     public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)));
     public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
@@ -63,13 +67,13 @@ public class ModBlocks {
 
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", CreatePolishedDeepslateButton());
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
-            new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE, Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
+            new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
+                    Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CinchsBetterDeepslate.MOD_ID, name), block);
     }
-
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
@@ -77,7 +81,6 @@ public class ModBlocks {
     public static Block CreatePolishedDeepslateButton() {
         return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY));
     }
-
     public static void registerModBlocks() {
         CinchsBetterDeepslate.LOGGER.info("Registering ModBlocks for " + CinchsBetterDeepslate.MOD_ID);
     }
