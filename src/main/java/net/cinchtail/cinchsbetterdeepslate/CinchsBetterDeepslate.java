@@ -2,7 +2,6 @@ package net.cinchtail.cinchsbetterdeepslate;
 
 import com.mojang.logging.LogUtils;
 import net.cinchtail.cinchsbetterdeepslate.block.ModBlocks;
-import net.cinchtail.cinchsbetterdeepslate.item.ModItems;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -20,7 +19,6 @@ public class CinchsBetterDeepslate {
 
     public CinchsBetterDeepslate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
 

@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsbetterdeepslate.block;
 
 import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
-import net.cinchtail.cinchsbetterdeepslate.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -88,16 +87,17 @@ public class ModBlocks {
                     .sound(SoundType.POLISHED_DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
-        return toReturn;
+    public static class ModItems {
+        public static final DeferredRegister<Item> ITEMS =
+                DeferredRegister.create(ForgeRegistries.ITEMS, CinchsBetterDeepslate.MOD_ID);
     }
-
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    public static <T extends Block> RegistryObject<T> registerBlock( String name, Supplier<T> block, CreativeModeTab tab ) {
+        RegistryObject<T> registeredBlock = BLOCKS.register(name, block);
+        ModItems.ITEMS.register(name, () -> new BlockItem(registeredBlock.get(), new Item.Properties().tab(tab)));
+        return registeredBlock;
     }
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+        ModItems.ITEMS.register(eventBus);
     }
 }
