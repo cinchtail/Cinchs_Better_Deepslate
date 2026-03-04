@@ -16,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.level.block.Blocks.DEEPSLATE;
+import static net.minecraft.world.level.block.Blocks.POLISHED_BLACKSTONE_BUTTON;
 
 public class ModBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CinchsBetterDeepslate.MOD_ID);
@@ -97,7 +98,10 @@ public class ModBlocks {
             () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)
                             .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_pressure_plate")))));
-    public static final DeferredBlock<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", ModBlocks::polishedDeepslateButton);
+    public static final DeferredBlock<ButtonBlock> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
+                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(2f).requiresCorrectToolForDrops().noCollission()
+                            .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_button")))));
 
 
     public static class ModItems {
@@ -109,9 +113,5 @@ public class ModBlocks {
                 new Item.Properties().useBlockDescriptionPrefix().setId(ResourceKey.create(Registries.ITEM,
                         ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, name)))));
         return blockReg;
-    }
-    private static Block polishedDeepslateButton() {
-        return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)
-                .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_button"))));
     }
 }

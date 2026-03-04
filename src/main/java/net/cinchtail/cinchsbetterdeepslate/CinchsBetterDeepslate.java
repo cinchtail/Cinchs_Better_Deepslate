@@ -1,7 +1,7 @@
 package net.cinchtail.cinchsbetterdeepslate;
 
 import net.cinchtail.cinchsbetterdeepslate.block.ModBlocks;
-import net.cinchtail.cinchsbetterdeepslate.item.ModCreativeModeTabs;
+import net.cinchtail.cinchsbetterdeepslate.item.ModItemGroups;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
@@ -16,6 +16,6 @@ public class CinchsBetterDeepslate {
     public CinchsBetterDeepslate(@NotNull IEventBus bus) {
         ModBlocks.BLOCKS.register(bus);
         ModBlocks.ModItems.ITEMS.register(bus);
-        ModCreativeModeTabs.CREATIVE_MODE_TABS.register(bus);
+        ModItemGroups.CREATIVE_MODE_TABS.register(bus);
     }
 }
