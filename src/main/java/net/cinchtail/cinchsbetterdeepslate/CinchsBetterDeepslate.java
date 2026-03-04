@@ -2,7 +2,7 @@ package net.cinchtail.cinchsbetterdeepslate;
 
 import com.mojang.logging.LogUtils;
 import net.cinchtail.cinchsbetterdeepslate.block.ModBlocks;
-import net.cinchtail.cinchsbetterdeepslate.item.ModCreativeModeTabs;
+import net.cinchtail.cinchsbetterdeepslate.item.ModItemGroups;
 import net.cinchtail.cinchsbetterdeepslate.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,7 +24,7 @@ public class CinchsBetterDeepslate {
         IEventBus modEventBus = context.getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModCreativeModeTabs.register(modEventBus);
+        ModItemGroups.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
