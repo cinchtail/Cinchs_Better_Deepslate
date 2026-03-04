@@ -2,6 +2,9 @@ package net.cinchtail.cinchsbetterdeepslate.block;
 
 import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
 import net.cinchtail.cinchsbetterdeepslate.util.ModBlockSetType;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -13,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.level.block.Blocks.DEEPSLATE;
+import static net.minecraft.world.level.block.Blocks.POLISHED_BLACKSTONE_BUTTON;
 
 public class ModBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CinchsBetterDeepslate.MOD_ID);
@@ -77,8 +81,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)));
-    public static final DeferredBlock<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", ModBlocks::polishedDeepslateButton);
-
+    public static final DeferredBlock<ButtonBlock> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
+                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(2f).requiresCorrectToolForDrops().noCollission()));
 
     public static class ModItems {
         public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(CinchsBetterDeepslate.MOD_ID);
@@ -86,8 +91,5 @@ public class ModBlocks {
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> blockReg = BLOCKS.register(name, block);
         ModItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(), new Item.Properties())); return blockReg;
-    }
-    private static Block polishedDeepslateButton() {
-        return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY));
     }
 }
