@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:polished_deepslate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsbetterdeepslate:polished_deepslate_button"
+  }
+}

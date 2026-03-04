@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsbetterdeepslate:mossy_cobbled_deepslate",
+  "result": {
+    "count": 2,
+    "id": "cinchsbetterdeepslate:mossy_cobbled_deepslate_slab"
+  }
+}
