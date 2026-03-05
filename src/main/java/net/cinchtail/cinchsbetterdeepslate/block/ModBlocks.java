@@ -99,7 +99,7 @@ public class ModBlocks {
                             .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_pressure_plate")))));
     public static final DeferredBlock<ButtonBlock> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
-                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(2f).requiresCorrectToolForDrops().noCollision()
+                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(.5f).noCollision()
                             .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_button")))));
 
 
