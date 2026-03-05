@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "cinchs-better-deepslate",
+	"id": "cinchsbetterdeepslate",
 	"version": "${version}",
 	"name": "Cinch's Better Deepslate",
 	"description": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
