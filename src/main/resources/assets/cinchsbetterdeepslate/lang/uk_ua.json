@@ -1,0 +1,25 @@
+{
+  "block.cinchsbetterdeepslate.polished_deepslate_button": "Полірована глибосланцева кнопка",
+  "block.cinchsbetterdeepslate.polished_deepslate_pressure_plate": "Натискна плита з полірованого глибосланцю",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate": "Моховитий глибосланцевий кругляк",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_wall": "Стіна з моховитого глибосланцевого кругляку",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_slab": "Плита з моховитого глибосланцевого кругляку",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_stairs": "Сходи з моховитого глибосланцевого кругляку",
+  "block.cinchsbetterdeepslate.mossy_deepslate_bricks": "Моховита глибосланцева цегла",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_wall": "Стіна з моховитої глибосланцевої цегли",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_slab": "Плита з моховитої глибосланцевої цегли",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_stairs": "Сходи з моховитої глибосланцевої цегли",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tiles": "Моховиті глибосланцеві кахлі",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_wall": "Стіна з моховитих глибосланцевих кахлів",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_slab": "Плита з моховитих глибосланцевих кахлів",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_stairs": "Сходи з моховитих глибосланцевих кахлів",
+  "block.cinchsbetterdeepslate.deepslate_wall": "Глибосланцева стіна",
+  "block.cinchsbetterdeepslate.deepslate_slab": "Глибосланцева плита",
+  "block.cinchsbetterdeepslate.deepslate_stairs": "Глибосланцеві сходи",
+  "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Інкрустований скалком глибосланець",
+
+  "itemgroup.cinchsbetterdeepslate": "Cinch's Better Deepslate",
+
+  "modmenu.descriptionTranslation.cinchsbetterdeepslate": "Додає нові глибоcланцеві блоки та змінює рецепти майстрування з глибосланцю.",
+  "fml.menu.mods.info.description.cinchsbetterdeepslate": "Додає нові глибоcланцеві блоки та змінює рецепти майстрування з глибосланцю."
+}
