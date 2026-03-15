@@ -83,7 +83,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)));
     public static final DeferredBlock<ButtonBlock> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
-                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(0.5F).noCollission()));
 
     public static class ModItems {
         public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(CinchsBetterDeepslate.MOD_ID);
