@@ -17,6 +17,10 @@
   "block.cinchsbetterdeepslate.deepslate_slab": "深板岩板",
   "block.cinchsbetterdeepslate.deepslate_stairs": "深石板楼梯",
   "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "镶鳞幽影深岩",
+  "block.cinchsbetterdeepslate.deepslate_brick_pillar": "深板岩砖柱",
 
-  "itemgroup.cinchsbetterdeepslate": "Cinch's Better Deepslate"
+  "itemgroup.cinchsbetterdeepslate": "Cinch's Better Deepslate",
+
+  "modmenu.descriptionTranslation.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
+  "fml.menu.mods.info.description.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes."
 }
