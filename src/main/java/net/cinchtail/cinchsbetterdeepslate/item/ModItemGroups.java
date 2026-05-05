@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .title(Component.translatable("itemgroup.cinchsbetterdeepslate"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
+                        output.accept(ModBlocks.DEEPSLATE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB.get());

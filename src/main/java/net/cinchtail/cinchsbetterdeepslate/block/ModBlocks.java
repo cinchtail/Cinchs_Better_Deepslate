@@ -24,6 +24,10 @@ public class ModBlocks {
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
                     .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
@@ -76,7 +80,9 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(DEEPSLATE)
                     .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final RegistryObject<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", ModBlocks::polishedDeepslateButton);
+    public static final RegistryObject<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.of().noCollission().strength(0.5F)
+                    .pushReaction(PushReaction.DESTROY), ModBlockSetType.POLISHED_DEEPSLATE, 20, false));
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
                     BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE), ModBlockSetType.POLISHED_DEEPSLATE));
@@ -89,10 +95,6 @@ public class ModBlocks {
         RegistryObject<T> registeredBlock = BLOCKS.register(name, block);
         ModItems.ITEMS.register(name, () -> new BlockItem(registeredBlock.get(), new Item.Properties()));
         return registeredBlock;
-    }
-    private static ButtonBlock polishedDeepslateButton() {
-        return new ButtonBlock(BlockBehaviour.Properties.of().noCollission().strength(0.5F)
-                .pushReaction(PushReaction.DESTROY), ModBlockSetType.POLISHED_DEEPSLATE, 20, false);
     }
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
