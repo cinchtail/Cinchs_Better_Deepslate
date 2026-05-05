@@ -24,7 +24,7 @@ public class CinchsBetterDeepslate {
 
     }
     public static int index = 0;
-    public static final CreativeModeTab CINCHSBETTERDEEPSLATE_TAB = new CreativeModeTab("cinchsbetterdeepslate_tab") {
+    public static final CreativeModeTab CINCHSBETTERDEEPSLATE_TAB = new CreativeModeTab("cinchsbetterdeepslate") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get());

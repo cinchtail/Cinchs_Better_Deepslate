@@ -86,8 +86,8 @@ public class ModBlocks {
             () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().sound(SoundType.POLISHED_DEEPSLATE)
                     .strength(0.5F)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE,
-                            MaterialColor.DEEPSLATE).requiresCorrectToolForDrops().noCollission().strength(0.5F)
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DEEPSLATE)
+                    .requiresCorrectToolForDrops().noCollission().strength(0.5F)
                     .sound(SoundType.POLISHED_DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
 
