@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cinchsbetterdeepslate:block/deepslate_brick_pillar_top",
+    "side": "cinchsbetterdeepslate:block/deepslate_brick_pillar_side"
+  }
+}
