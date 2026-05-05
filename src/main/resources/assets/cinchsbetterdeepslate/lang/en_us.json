@@ -17,6 +17,10 @@
   "block.cinchsbetterdeepslate.deepslate_slab": "Deepslate Slab",
   "block.cinchsbetterdeepslate.deepslate_stairs": "Deepslate Stairs",
   "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Sculk Inlaid Deepslate",
+  "block.cinchsbetterdeepslate.deepslate_brick_pillar": "Deepslate Brick Pillar",
 
-  "itemGroup.cinchsbetterdeepslate_tab": "Cinch's Better Deepslate"
+  "itemGroup.cinchsbetterdeepslate_tab": "Cinch's Better Deepslate",
+
+  "modmenu.descriptionTranslation.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
+  "fml.menu.mods.info.description.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes."
 }

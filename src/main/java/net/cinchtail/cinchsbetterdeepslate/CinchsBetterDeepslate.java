@@ -36,6 +36,8 @@ public class CinchsBetterDeepslate {
             index = 0;
             items.set(index, new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()));
             index++;
+            items.set(index, new ItemStack(ModBlocks.DEEPSLATE_BRICK_PILLAR.get()));
+            index++;
             items.set(index, new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()));
             index++;
             items.set(index, new ItemStack(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get()));

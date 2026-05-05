@@ -17,6 +17,10 @@
   "block.cinchsbetterdeepslate.deepslate_slab": "Łupkowa płyta",
   "block.cinchsbetterdeepslate.deepslate_stairs": "Łupkowe schody",
   "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Łupek inkrustowany skalkiem",
+  "block.cinchsbetterdeepslate.deepslate_brick_pillar": "Pilar de Tijolos de Ardosiabissal",
 
-  "itemGroup.cinchsbetterdeepslate_tab": "Cinch's Better Deepslate"
+  "itemGroup.cinchsbetterdeepslate_tab": "Cinch's Better Deepslate",
+
+  "modmenu.descriptionTranslation.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
+  "fml.menu.mods.info.description.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes."
 }

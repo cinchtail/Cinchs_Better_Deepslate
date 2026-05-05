@@ -25,6 +25,10 @@ public class ModBlocks {
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
+    public static final RegistryObject<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
+
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).strength(3.5F, 6.0F)
                     .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
@@ -68,9 +72,9 @@ public class ModBlocks {
                     .strength(3.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
-            () -> new StairBlock(DEEPSLATE::defaultBlockState,
-                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.0F, 6.0F).requiresCorrectToolForDrops()
-                            .sound(SoundType.DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
+            () -> new StairBlock(DEEPSLATE::defaultBlockState, BlockBehaviour.Properties.of(Material.STONE,
+                            MaterialColor.DEEPSLATE).strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
     public static final RegistryObject<Block> DEEPSLATE_SLAB = registerBlock("deepslate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(DEEPSLATE)
                     .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
@@ -83,7 +87,7 @@ public class ModBlocks {
                     .strength(0.5F)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE,
-                    MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().noCollission().strength(0.5F)
+                            MaterialColor.DEEPSLATE).requiresCorrectToolForDrops().noCollission().strength(0.5F)
                     .sound(SoundType.POLISHED_DEEPSLATE)), CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB);
 
 
