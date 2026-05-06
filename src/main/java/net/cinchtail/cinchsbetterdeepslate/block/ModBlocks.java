@@ -2,14 +2,10 @@ package net.cinchtail.cinchsbetterdeepslate.block;
 
 import net.cinchtail.cinchsbetterdeepslate.CinchsBetterDeepslate;
 import net.cinchtail.cinchsbetterdeepslate.util.ModBlockSetType;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -80,7 +76,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)));
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE)));
     public static final DeferredBlock<ButtonBlock> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
                     BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(0.5F).noCollission()));
