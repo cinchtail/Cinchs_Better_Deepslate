@@ -21,6 +21,10 @@ public class ModBlocks {
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
                     .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));

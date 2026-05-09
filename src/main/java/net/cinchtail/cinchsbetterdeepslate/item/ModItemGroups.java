@@ -18,18 +18,33 @@ public class ModItemGroups {
 
     public static String CINCHSBETTERDEEPSLATE_TAB_TITLE = "itemgroup.cinchsbetterdeepslate";
 
-    public static final DeferredHolder<CreativeModeTab,
-            CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab", () -> {
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CINCHSBETTERDEEPSLATE_TAB = CREATIVE_MODE_TABS.register("cinchsbetterdeepslate_tab", () -> {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();
 
         builder.displayItems((itemDisplay, output) -> {
             Set<Item> addedItems = new HashSet<>();
 
-            ModBlocks.BLOCKS.getEntries()
-                    .stream()
-                    .map((block) -> block.get().asItem())
-                    .filter(addedItems::add)
-                    .forEach(output::accept);
+            for (DeferredHolder<Item, ? extends  Item> item : ModBlocks.ModItems.ITEMS.getEntries())
+                output.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
+            output.accept(ModBlocks.DEEPSLATE_BRICK_PILLAR.get());
+            output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get());
+            output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get());
+            output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB.get());
+            output.accept(ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_TILES.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB.get());
+            output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL.get());
+            output.accept(ModBlocks.DEEPSLATE_STAIRS.get());
+            output.accept(ModBlocks.DEEPSLATE_SLAB.get());
+            output.accept(ModBlocks.DEEPSLATE_WALL.get());
+            output.accept(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get());
+            output.accept(ModBlocks.POLISHED_DEEPSLATE_BUTTON.get());
+
         });
         builder.icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE.get()));
         builder.title(Component.translatable(CINCHSBETTERDEEPSLATE_TAB_TITLE));
