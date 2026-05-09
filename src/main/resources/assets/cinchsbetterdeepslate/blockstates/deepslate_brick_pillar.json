@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cinchsbetterdeepslate:block/deepslate_brick_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cinchsbetterdeepslate:block/deepslate_brick_pillar"
+    },
+    "axis=z": {
+      "model": "cinchsbetterdeepslate:block/deepslate_brick_pillar",
+      "x": 90
+    }
+  }
+}

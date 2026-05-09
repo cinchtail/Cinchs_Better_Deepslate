@@ -1,0 +1,26 @@
+{
+  "block.cinchsbetterdeepslate.polished_deepslate_button": "Botão de Ardosiabissal Polida",
+  "block.cinchsbetterdeepslate.polished_deepslate_pressure_plate": "Placa de Pressão de Ardosiabissal Polida",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate": "Pedregulho de Ardosiabissal Musgoso",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_wall": "Muro de Pedregulho de Ardosiabissal Musgoso",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_slab": "Laje de Pedregulho de Ardosiabissal Musgoso",
+  "block.cinchsbetterdeepslate.mossy_cobbled_deepslate_stairs": "Escadas de Pedregulho de Ardosiabissal Musgoso",
+  "block.cinchsbetterdeepslate.mossy_deepslate_bricks": "Tijolos de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_wall": "Muro de Tijolos de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_slab": "Laje de Tijolos de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_brick_stairs": "Escadas de Tijolos de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tiles": "Ladrilhos de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_wall": "Muro de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_slab": "Laje de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.mossy_deepslate_tile_stairs": "Escadas de Ardosiabissal Musgosos",
+  "block.cinchsbetterdeepslate.deepslate_wall": "Muro de Ardosiabissal",
+  "block.cinchsbetterdeepslate.deepslate_slab": "Laje de Ardosiabissal",
+  "block.cinchsbetterdeepslate.deepslate_stairs": "Escadas de Ardosiabissal",
+  "block.cinchsbetterdeepslate.sculk_inlaid_deepslate": "Ardosiabissal com Sculk Incrustado",
+  "block.cinchsbetterdeepslate.deepslate_brick_pillar": "Pilar de Tijolos de Ardosiabissal",
+
+  "itemgroup.cinchsbetterdeepslate": "Cinch's Better Deepslate",
+
+  "modmenu.descriptionTranslation.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes.",
+  "fml.menu.mods.info.description.cinchsbetterdeepslate": "A mod that adds new deepslate blocks, and re-does deepslate crafting recipes."
+}
