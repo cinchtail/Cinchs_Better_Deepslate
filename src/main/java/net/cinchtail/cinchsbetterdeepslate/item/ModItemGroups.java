@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsbetterdeepslate"))
                     .icon(() -> new ItemStack(ModBlocks.SCULK_INLAID_DEEPSLATE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
+                        entries.add(ModBlocks.DEEPSLATE_BRICK_PILLAR);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
                         entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
