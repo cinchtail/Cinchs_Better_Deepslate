@@ -18,6 +18,7 @@
     "cinchsbetterdeepslate:deepslate_wall",
     "cinchsbetterdeepslate:deepslate_slab",
     "cinchsbetterdeepslate:deepslate_stairs",
-    "cinchsbetterdeepslate:sculk_inlaid_deepslate"
+    "cinchsbetterdeepslate:sculk_inlaid_deepslate",
+    "cinchsbetterdeepslate:deepslate_brick_pillar"
   ]
 }
