@@ -83,7 +83,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             properties -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
-                    properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).forceSolidOn().instrument(NoteBlockInstrument.BASS)
+                    properties.mapColor(MapColor.DEEPSLATE).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).forceSolidOn().instrument(NoteBlockInstrument.BASS)
                             .noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             properties -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
